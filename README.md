@@ -6,7 +6,7 @@
 A aplicação consiste em manter um cadastro de usuário, produtos e suas categorias onde os usuários podem selecionar os produtos e adicioná-los ao carrinho.
 
 ## Modelo conceitual
-![Modelo Conceitual](https://github.com/henriquecesarjr/DSCommerce/blob/main/assets/modelo%20conceitual.png)
+![Modelo Conceitual](https://github.com/henriquecesarjr/ds_commerce/blob/main/assets/modelo%20conceitual.png)
 
 # Tecnologias utilizadas
 - Java
