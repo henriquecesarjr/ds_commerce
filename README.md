@@ -1,5 +1,5 @@
 # DSCommerce
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/henriquecesarjr/DSCommerce/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/henriquecesarjr/ds_commerce/blob/main/LICENSE)
 
 # Sobre o projeto
 
