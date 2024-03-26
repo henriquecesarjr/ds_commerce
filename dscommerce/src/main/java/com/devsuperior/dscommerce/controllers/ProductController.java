@@ -18,11 +18,11 @@ import java.util.Optional;
 public class ProductController {
 
     @Autowired
-    private ProductService productService;
+    private ProductService service;
 
     @GetMapping(value = "/{id}")
     public ProductDTO findById(@PathVariable Long id) {
-        return productService.findById(id);
+        return service.findById(id);
     }
 
 }
