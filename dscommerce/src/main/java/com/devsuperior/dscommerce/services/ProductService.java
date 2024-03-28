@@ -31,4 +31,21 @@ public class ProductService {
         return product.map(x -> modelMapper.map(x, ProductDTO.class));
     }
 
+    @Transactional
+    public ProductDTO insert(ProductDTO dto) {
+        Product entity = new Product();
+        copyDtoToEntity(entity, dto);
+
+        entity = repository.save(entity);
+
+        return modelMapper.map(entity, ProductDTO.class);
+    }
+
+    private void copyDtoToEntity(Product entity, ProductDTO dto) {
+        entity.setName(dto.getName());
+        entity.setDescription(dto.getDescription());
+        entity.setPrice(dto.getPrice());
+        entity.setImgUrl(dto.getImgUrl());
+    }
+
 }
