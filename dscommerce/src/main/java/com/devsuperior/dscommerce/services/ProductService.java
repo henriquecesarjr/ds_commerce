@@ -35,9 +35,15 @@ public class ProductService {
     public ProductDTO insert(ProductDTO dto) {
         Product entity = new Product();
         copyDtoToEntity(entity, dto);
-
         entity = repository.save(entity);
+        return modelMapper.map(entity, ProductDTO.class);
+    }
 
+    @Transactional
+    public ProductDTO update(Long id, ProductDTO dto) {
+        Product entity = repository.getReferenceById(id);
+        copyDtoToEntity(entity, dto);
+        entity = repository.save(entity);
         return modelMapper.map(entity, ProductDTO.class);
     }
 
