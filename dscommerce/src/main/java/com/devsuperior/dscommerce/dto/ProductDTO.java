@@ -9,7 +9,7 @@ public class ProductDTO {
     private Double price;
     private String imgUrl;
 
-    public ProductDTO() {
+    public ProductDTO(){
     }
 
     public ProductDTO(Long id, String name, String description, Double price, String imgUrl) {
