@@ -11,6 +11,7 @@ A aplicação consiste em manter um cadastro de usuário, produtos e suas catego
 # Tecnologias utilizadas
 - Java
 - Spring Boot
+- Spring Security
 - JPA / Hibernate
 - H2 Database
 - Maven
