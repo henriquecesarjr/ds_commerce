@@ -82,7 +82,11 @@ public class Order {
     }
 
     public List<Product> getProducts() {
-        return items.stream().map(x -> x.getProcuct()).toList();
+        return items.stream().map(x -> x.getProduct()).toList();
+    }
+
+    public Set<OrderItem> getItems() {
+        return items;
     }
 
     @Override
