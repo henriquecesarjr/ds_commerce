@@ -8,6 +8,7 @@ import java.util.Objects;
 @Entity
 @Table(name ="tb_payment")
 public class Payment {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
